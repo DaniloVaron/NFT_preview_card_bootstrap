@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+$font-family: "Outfit", sans-serif;
+
+/* Primario */
+
+$Azul_suave: hsl(215, 51%, 70%);
+$Cian: hsl(178, 100%, 50%);
+$Cian_hover: hsla(178, 100%, 50%, 0.4);
+
+/* Neutral */
+
+$Azul_oscuro_principal: hsl(217, 54%, 11%);
+$Azul_oscuro_tarjeta: hsl(216, 50%, 16%);
+$Azul_oscuro_tarjeta_hover: rgba(20, 37, 61, 0.05);
+$Azul_oscuro_linea: hsl(215, 32%, 27%);
+$Blanco: hsl(0, 0%, 100%);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
