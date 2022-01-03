@@ -15,52 +15,58 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- Normalize -->
-  <link rel="stylesheet" href="./css/normalize.css">
-
   <!-- Mis estilos -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/custom.css">
 </head>
 
-<body>
+<body class="bg-primary text-light d-flex align-items-center justify-content-center">
 
   <!-- Contenedor -->
-  <main class="container">
+  <main class="container d-flex flex-column p-4 align-items-center ">
 
     <!-- Sombra -->
-    <div class="contenedor_sombra">
+    <div class="fondo py-4 d-flex justify-content-center redondeo tam dimension">
 
       <!-- Carta -->
-      <article class="card">
+      <article class="bg-secondary card align-items-center justify-content-center w-75 p-4 border-0 redondeo sombra">
 
         <!-- Imagen principal -->
-        <div class="imagen_p">
+        <div class="imagen_p card-img-top">
           <div class="cambio_imagen">
             <img src="./images/icon-view.svg" alt="cambio">
           </div>
         </div>
 
         <!-- Información -->
-        <div class="info">
+        <div class="card-body p-0 ">
 
           <!-- Titulo -->
-          <h2 class="titulo">Equilibrium #3429</h2>
+          <h2 class="card-title h5 d-inline-block my-3 cambio">Equilibrium #3429</h2>
 
           <!-- Texto principal -->
-          <p class="texto">Our Equilibrium collection promotes balance and calm.</p>
+          <p class="card-text text-success">Our Equilibrium collection promotes balance and calm.</p>
 
           <!-- Cantidad y Tiempo -->
-          <div class="cantidad_tiempo">
-            <p class="moneda"><img src="./images/icon-ethereum.svg" alt="modena"> 0.041 ETH</p>
-            <p class="tiempo"><img src="./images/icon-clock.svg" alt="reloj"> 3 days left</p>
+          <div class="d-flex justify-content-between fs-6">
+            <div class="d-flex align-items-center">
+              <img src="./images/icon-ethereum.svg" alt="modena" class="me-2">
+              <p class="d-flex align-items-center m-0 text-info">0.041 ETH</p>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <img src="./images/icon-clock.svg" alt="reloj" class="me-2">
+              <p class="d-flex align-items-center m-0 text-success">3 days left</p>
+            </div>
           </div>
 
-          <hr class="linea">
+          <hr class="bg-danger">
 
           <!-- Autor -->
-          <div class="autor">
-            <img src="./images/image-avatar.png" alt="autor de la moneda">
-            <p>Creation of <a href="#">Jules Wyvern</a></p>
+          <div class="d-flex align-items-center autor fs-6">
+            <img src="./images/image-avatar.png" alt="autor de la moneda"
+              class="border border-1 border-light rounded-circle">
+            <p class="m-0 ms-2 text-success">Creation of <a href="#" class="boton cambio">Jules
+                Wyvern</a></p>
           </div>
 
         </div>
@@ -68,9 +74,11 @@
       </article>
     </div>
 
-    <div class="attribution">
-      Desafío por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Codificado por <a href="https://github.com/DaniloVaron" target="_blank">Danilo Varon</a>.
+    <div class="attribution d-flex justify-content-center mt-2">
+      <p class="m-0">Desafío por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend
+          Mentor</a>.</p>
+      <p class="m-0 ms-2"> Codificado por <a href="https://github.com/DaniloVaron" target="_blank">
+          Danilo Varon</a>.</p>
     </div>
   </main>
 
